@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --first-color: rgb(46, 46, 88);
+    --second-color: rgb(33, 33, 100);
+    --third-color: rgb(141, 194, 255);
+    --fourth: rgb(79, 79, 255);
+    --f-border-color: black;
+    --s-border-color: blue;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    border: 2px solid var(--f-border-color);
+    background-color: var(--second-color);
+}
+
+.icons {
+    height: 100%;
+    width: 7vw;
+    /* border: 2px solid var(--s-border-color); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icons ul {
+    height: 50vh;
+    /* border: 2px solid var(--f-border-color); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8em;
+    color: white;
+}
+
+.icons ul span {
+    cursor: pointer;
+}
+
+#addDevice {
+    font-size: 1em;
+    position: absolute;
+    top: 4vh;
+    left: 10vw;
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: var(--fourth);
+    border-radius: 15px;
+}
+
+.hello {
+    position: absolute;
+    top: 12vh;
+    left: 10vw;
+    color: antiquewhite;
+}
+
+.actionButton {
+    height: 10vh;
+    width: 60vw;
+    /* border: 2px solid var(--s-border-color); */
+    position: absolute;
+    top: 21vh;
+    left: 6vw;
+}
+
+.actionButton ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: whitesmoke;
+}
+
+.actionButton ul li {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+
+.livingRoom {
+    height: 65vh;
+    width: 55vw;
+    /* border: 2px solid var(--f-border-color); */
+    position: relative;
+    /* top: 30vh; */
+    bottom: 70vh;
+    left: 10vw;
+    border-radius: 10px;
+    background-color: var(--first-color);
+}
+
+.livingRoom h5 {
+    position: absolute;
+    top: 8px;
+    left: 2.35vw;
+    color: antiquewhite;
+}
+
+.livingRoom input[type="checkbox"] {
+    position: absolute;
+    right: 2.35vw;
+    top: 8px;
+    height: 20px;
+    width: 20px;
+}
+
+.livingRoom-cards {
+    height: 55vh;
+    width: 50vw;
+    /* border: 2px solid var(--s-border-color); */
+    position: absolute;
+    top: 7vh;
+    left: 2.35vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-card {
+    height: 30vh;
+    width: 40vw;
+    /* border: 2px solid var(--f-border-color); */
+    background: url(living-room.jpg);
+    background-size: cover;
+    background-position: center;
+    image-resolution: inherit;
+    border-radius: 10px;
+}
+
+.opt-cards {
+    height: 22vh;
+    width: 40vw;
+    /* border: 2px solid var(--s-border-color); */
+    margin-top: 8px;
+    position: relative;
+
+
+}
+
+.card {
+    height: 55px;
+    width: 170px;
+    border: 2px solid var(--f-border-color);
+    /* display: inline-block; */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.opt-card1 {
+    position: absolute;
+    left: 60px;
+    top: 5px;
+}
+
+.opt-card2 {
+    position: absolute;
+    left: 60px;
+    bottom: 5px;
+}
+
+.opt-card3 {
+    position: absolute;
+    right: 60px;
+    top: 5px;
+}
+
+.opt-card4 {
+    position: absolute;
+    right: 60px;
+    bottom: 5px;
+}
+
+.card ul li {
+    list-style: none;
+    /* margin-left: ; */
+}
+
+.card input {
+    margin-left: auto;
+}
+
+.weatherStatus {
+    height: 80vh;
+    width: 25vw;
+    /* border: 2px solid var(--s-border-color); */
+    position: absolute;
+    top: 14.4vh;
+    right: 5vw;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    background-color: var(--first-color);
+    border-radius: 10px;
+}
+
+.status ul li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.weatherStatus h2 {
+    position: absolute;
+    top: 10vh;
+    left: 2vw;
+}
+
+.status {
+    position: absolute;
+    top: 14vh;
+    /* left: 2vw; */
+    width: 250px;
+    height: 350px;
+    /* border: 2px solid var(--f-border-color); */
+}
+
+.status ul:nth-child(2) {
+    position: absolute;
+    right: 3vw;
+    top: 0vh;
+}
+
+.status ul:nth-child(3) {
+    height: 180px;
+    width: 250px;
+    /* border: 2px solid var(--f-border-color); */
+}
+
+.status-img {
+    background: url(sun-with-cloud.png);
+    height: 130px;
+    width: 200px;
+    position: absolute;
+    top: -13vh;
+    left: -3vw;
+    background-size: cover;
+    background-position: center;
+}
